@@ -114,7 +114,7 @@ The cluster assignment is shown by different colors, and the centroids are denot
 
 ![ScreenShot](/images/udp8.png "Final Cluster Assignment and Cetroids")
 
-![ScreenShot](/images/udp8.png)
+![ScreenShot](/images/udp9.png)
 
 The result will be the last cluster assignment and the last cluster centroid vectors, m1 and m2. These two cluster centroid vectors are returned by the server to the client.
 
