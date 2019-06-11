@@ -1,6 +1,4 @@
-# Project Title
-
-UDP-Client-Server-Packet-Creation-and-Encryption-with-K-Means-Clustering
+# UDP-Client-Server-Packet-Creation-and-Encryption-with-K-Means-Clustering
 
 ## Overview
 
