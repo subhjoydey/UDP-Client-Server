@@ -121,3 +121,16 @@ The result will be the last cluster assignment and the last cluster centroid vec
 ## Software
 
 JAVA Socket Programming (Compatible with different machines over same Network).
+
+## Flow Chart
+
+![ScreenShot](/images/udp12.png "Flow Chart")
+
+## UML Diagrams
+
+![ScreenShot](/images/udp11.png "UML Diagrams")
+
+## OUTPUT
+
+
+![ScreenShot](/images/udp10.png "Outputs")
