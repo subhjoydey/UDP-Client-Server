@@ -21,9 +21,9 @@ Using the data packet (referred to as DATA packet), the client will send a numbe
 
 ![ScreenShot](/images/udp1.png "Packet Structure")
 
-```
-Give examples
-```
+The fields of the DATA packet are as follows:
+* Packet type (1 byte): This field describes the type of the packet, and it should have a value of 00h (the byte values 
+  will be given in hexadecimal notation).
 
 ### Installing
 
