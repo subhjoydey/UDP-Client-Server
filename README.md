@@ -15,7 +15,7 @@ The Java application uses the following packets for communication between the cl
 Using the data packet (referred to as DATA packet), the client will send a number of two-dimensional (2D) vectors to the server. The DATA packet has have the following structure:
 
 <p align="center">
-![ScreenShot](/images/udp1.png "Packet Structure")
+<img src="/images/udp1.png "Packet Structure">
 </p>
 
 The fields of the DATA packet are as follows:
