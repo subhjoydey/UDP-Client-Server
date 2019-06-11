@@ -15,7 +15,7 @@ The Java application uses the following packets for communication between the cl
 Using the data packet (referred to as DATA packet), the client will send a number of two-dimensional (2D) vectors to the server. The DATA packet has have the following structure:
 
 <p align="center">
-<img src="/images/udp1.png "Packet Structure">
+<img src="/images/udp1.png" "Packet Structure">
 </p>
 
 The fields of the DATA packet are as follows:
@@ -26,7 +26,9 @@ The fields of the DATA packet are as follows:
 
 The data acknowledgment (DACK) packet will be sent by the server to the client to acknowledge every DATA packet. Its structure is shown below.
 
-![ScreenShot](/images/udp2.png "DACK Packet Structure")
+<p align="center">
+<img src="/images/udp2.png" "DACK Packet Structure">
+</p>
 
 The DACK packet has the following fields:
 * Packet type (1 byte): This field describes the type of the packet, and it has a value of 01h.
