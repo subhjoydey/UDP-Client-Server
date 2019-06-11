@@ -35,13 +35,17 @@ The DACK packet has the following fields:
 * Acknowledgment number: This 16-bit field contains the sequence number of the last correctly received DATA packet.
   The request (REQ) packet will be sent by the client to the server once all data vectors have been sent, and it will         request the server to start the computation on the sent data vectors. The REQ packet has a very simple structure:
   
- ![ScreenShot](/images/udp3.png "REQ Packet Structure")
+ <p align="center">
+<img src="/images/udp3.png" "REQ Packet Structure">
+  </p>
  
  The packet type field (1 byte) has the value of 02h.
  
 The request acknowledgement (RACK) packet will also consist of a single byte, and it will be sent by the server to the client to signal the receipt of the REQ packet. The RACK packet is shown below:
 
-![ScreenShot](/images/udp4.png "RACK Packet Structure")
+<p align="center">
+<img src="/images/udp4.png" "RACK Packet Structure">
+</p>
 
 The packet type field (1 byte) has the value of 03h.
 
@@ -49,7 +53,9 @@ The cluster information (CLUS) packet will be sent by the server to the client a
 result of the computation, which will be two 2D vectors representing the calculated cluster centroids. The
 CLUS packet will have the following structure
 
-![ScreenShot](/images/udp5.png "CLUS Packet Structure")
+<p align="center">
+<img src="/images/udp5.png" "CLUS Packet Structure">
+</p>
 
 The CLUS packet has the following fields:
 * Packet type (1 byte): This field describes the type of the packet, and it has a value of 04h.
@@ -57,8 +63,9 @@ The CLUS packet has the following fields:
 
 The cluster information acknowledgment (CACK) packet will be sent by the client to the server, acknowledging the receipt of the CLUS packet. The CACK packet will consist of a single byte:
 
-
-![ScreenShot](/images/udp6.png "CACK Packet Structure")
+<p align="center">
+<img src="/images/udp6.png" "CACK Packet Structure">
+ </p>
 
 ### Data Vector Byte Encoding
 
@@ -108,7 +115,9 @@ The server implements the following protocol.
 
 The server performs K-means clustering on the received data vectors. K-means clustering is an unsupervised machine learning algorithm, which takes a number of input vectors and separates them into K clusters. In this case, there will be two clusters, so K = 2. Figure 1 shows an example of such data set.
 
-![ScreenShot](/images/udp7.png "Input Data Distribution")
+<p align="center">
+<img src="/images/udp7.png" "Input Data Distribution">
+  </p>
 
 After the algorithm has run, the data set will be partitioned into K non-overlapping (convex) clusters,
 and the centroid (center point) of each cluster will be calculated. Theses centroids are used to represent
@@ -116,9 +125,13 @@ the clusters, and new data points can be assigned to the cluster whose centroid 
 point. An example clustering result is depicted in Figure 2 for the data set of Figure 1 with two clusters.
 The cluster assignment is shown by different colors, and the centroids are denoted by circles.
 
-![ScreenShot](/images/udp8.png "Final Cluster Assignment and Cetroids")
+<p align="center">
+<img src="/images/udp8.png" "Final Cluster Assignment and Cetroids">
+</p>
 
-![ScreenShot](/images/udp9.png)
+<p align="center">
+<img src="/images/udp9.png">
+  </p>
 
 The result will be the last cluster assignment and the last cluster centroid vectors, m1 and m2. These two cluster centroid vectors are returned by the server to the client.
 
@@ -128,13 +141,18 @@ JAVA Socket Programming (Compatible with different machines over same Network).
 
 ## Flow Chart
 
-![ScreenShot](/images/udp12.png "Flow Chart")
+<p align="center">
+<img src="/images/udp12.png" "Flow Chart">
+  </p>
 
 ## UML Diagrams
 
-![ScreenShot](/images/udp11.png "UML Diagrams")
+<p align="center">
+<img src="/images/udp11.png" "UML Diagrams">
+  </p>
 
 ## OUTPUT
 
-
-![ScreenShot](/images/udp10.png "Outputs")
+<p align="center">
+  <img src="/images/udp10.png" "Outputs">
+  </p>
