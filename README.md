@@ -19,7 +19,7 @@ transmitted last.
 Using the data packet (referred to as DATA packet), the client will send a number of two-dimensional
 (2D) vectors to the server. The DATA packet should have the following structure:
 
-![ScreenShot](/UDP-Client-Server-Packet-Creation-and-Encryption-with-K-Means-Clustering/tree/master/images/udp1.png "Packet Structure")
+![ScreenShot](/images/udp1.png "Packet Structure")
 
 ```
 Give examples
